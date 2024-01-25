@@ -1,0 +1,436 @@
+<!doctype html>
+
+<html lang="en-GB">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<meta property="fb:page_id" content="413247712183723">
+	<meta property="og:site_name" content="Hacker House">
+	<meta name="twitter:site:id" content="3358636906">
+	<meta property="og:type" content="article">
+	<meta name="twitter:card" content="summary_large_image">
+	<title>Diebold AccuVote-TSx Election Machine Hacking</title>
+	<link rel="canonical" href="index.html?p=6240">
+	<meta name="description" content="Annually at the DEFCON summer camp, groups of hackers gather to hack in the Voting Village[0] against a test bed of electronic voting machines. You may have seen a popular video where a Defcon attendee highlighted how a generic supervisor card and default PIN could be used after picking a lock to modify election settings...">
+	<meta property="og:title" content="Diebold AccuVote-TSx Election Machine Hacking">
+	<meta property="og:url" content="https://hacker.house/lab/hacking-elections-diebold-accuvote-tsx-runs-space-invaders/">
+	<meta property="og:description" content="Annually at the DEFCON summer camp, groups of hackers gather to hack in the Voting Village[0] against a test bed of electronic voting machines. You may have seen a popular video where a Defcon attendee highlighted how a generic supervisor card and default PIN could be used after picking a lock to modify election settings...">
+	<meta property="og:image" content="https://hacker.house/wp-content/themes/hackerhouse/resources/assets/images/share.jpg">
+	<meta name="twitter:title" content="Diebold AccuVote-TSx Election Machine Hacking">
+	<meta name="twitter:url" content="https://hacker.house/lab/hacking-elections-diebold-accuvote-tsx-runs-space-invaders/">
+	<meta name="twitter:description" content="Annually at the DEFCON summer camp, groups of hackers gather to hack in the Voting Village[0] against a test bed of electronic voting machines. You may have seen a popular video where a Defcon attendee highlighted how a generic supervisor card and default PIN could be used after picking a lock to modify election settings...">
+	<meta name="twitter:image" content="https://hacker.house/wp-content/themes/hackerhouse/resources/assets/images/share.jpg">
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='https://ajax.googleapis.com/' />
+<link rel='stylesheet' id='wp-block-library-css' href='wp-includes/css/dist/block-library/style.min.css?ver=016ba876e3c4277ef6dbd501ab8e6497' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.4' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css' href='wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=8.4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css' href='wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=8.4.0' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css' href='wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=8.4.0' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='sage/main.css-css' href='wp-content/themes/hackerhouse/dist/styles/main_790976ee.css' type='text/css' media='all' />
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js' id='jquery-js'></script>
+<script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.8.4.0' id='jquery-blockui-js' defer data-wp-strategy='defer'></script>
+<script type='text/javascript' id='wc-add-to-cart-js-extra'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View basket","cart_url":"https:\/\/hacker.house\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=8.4.0' id='wc-add-to-cart-js' defer data-wp-strategy='defer'></script>
+<script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.8.4.0' id='js-cookie-js' defer data-wp-strategy='defer'></script>
+<script type='text/javascript' id='woocommerce-js-extra'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=8.4.0' id='woocommerce-js' defer data-wp-strategy='defer'></script>
+<script type='text/javascript' id='utils-js-extra'>
+/* <![CDATA[ */
+var userSettings = {"url":"\/","uid":"0","time":"1706187369","secure":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-includes/js/utils.min.js?ver=016ba876e3c4277ef6dbd501ab8e6497' id='utils-js'></script>
+<link rel="https://api.w.org/" href="https://hacker.house/wp-json/" /><link rel='shortlink' href='index.html?p=6240' />
+<script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		if (window.wfLogHumanRan) { return; }
+		window.wfLogHumanRan = true;
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//hacker.house/?wordfence_lh=1&hid=B7CFB7B1478C186CE9370F5D90C5AD4B');
+</script>	<link rel="shortcut icon" href="https://hacker.house/wp-content/themes/hackerhouse/dist/images/favicon.png" />
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<link rel="icon" href="wp-content/uploads/2018/07/cropped-hh-favico-32x32.png" sizes="32x32" />
+<link rel="icon" href="wp-content/uploads/2018/07/cropped-hh-favico-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="wp-content/uploads/2018/07/cropped-hh-favico-180x180.png" />
+<meta name="msapplication-TileImage" content="https://hacker.house/wp-content/uploads/2018/07/cropped-hh-favico-270x270.png" />
+</head>
+  <body class="labs-template-default single single-labs postid-6240 modal-open theme-hackerhouse/resources woocommerce-no-js woocommerce-multicurrency-USD hacking-elections-diebold-accuvote-tsx-runs-space-invaders">
+    
+    <div class="container">
+  <header>
+    <div class="row">
+      <div class="col-md-12">
+        <a class="logo" href="index.html" title="Home page"><span>Hacker House</span></a>
+                <a class="menu" title="Menu"><span></span><span></span><span></span></a>
+        <nav class="main-menu">
+                      <ul id="menu-main-menu" class="menu"><li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"><a href="index.html?p=8">Training</a></li>
+<li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="index.html?p=6">Services</a></li>
+<li id="menu-item-1219" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1219"><a href="shop-redirect/index.html">Shop</a></li>
+<li id="menu-item-5425" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5425"><a href="index.html?p=5423">Press &#038; Blog</a></li>
+<li id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="index.html?p=11">About</a></li>
+<li id="menu-item-5557" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5557"><a href="index.html?p=15">Labs</a></li>
+<li id="menu-item-1701" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1701"><a href="https://dashboard.hacker.house/">Portal</a></li>
+<li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38"><a href="index.html?p=21">Contact</a></li>
+</ul>
+                  </nav>
+      </div>
+    </div>
+  </header>
+</div>
+
+    <main class="main">
+            
+          <div class="modal false dark" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <a href="index.html?p=15" class="btn-close" aria-label="Close"></a>
+            </div>
+            <div class="modal-body">
+              <div class="post-content">
+    
+    <article class="post-6240 labs type-labs status-publish hentry">
+  <div class="content">
+    <h1>Diebold AccuVote-TSx Election Machine Hacking</h1>
+    <div class="meta">
+  <span class="date updated" datetime="2019-10-24T17:11:18+00:00">24.10.2019</span>
+  <span class="author vcard">by <a href="author/hackerhouse/index.html" rel="author" class="fn">
+    HackerHouse
+  </a></span>
+</div>
+    <p>Annually at the DEFCON summer camp, groups of hackers gather to hack in the Voting Village[0] against a test bed of electronic voting machines. You may have seen a popular video where a Defcon attendee highlighted how a generic supervisor card and default PIN could be used after picking a lock to modify election settings [1]. A security paper has also been written by three researchers and presented at the USENIX conference that shows how a supply chain attack might be performed, documenting a number of vulnerabilities [2]. Hacker House were supplied with a Diebold Accuvote-TSx system, surplus from these public hacking demonstrations and decided it would be a fun hacking project to expand on the existing research efforts to enhance our voting experience. This is a post about democracy, hardware hacking and how we successfully reprogrammed an electronic voting machine to play space invaders amongst other things. We will document the necessary steps for you to follow along and modify a voting machine at home! We rediscovered several known issues along the way, such as the existence of a JTAG header, and also observed more security relevant issues in relation to the flash memory used by Diebold.</p>
+<p>What follows is a technical tear-down of the Diebold AccuVote-TSx with the goal of obtaining code execution over the voting system to highlight risk. During 2016 at least 15 states were found to be using AccuVote-TSx or similar Diebold systems for local state and county elections. The Diebold machines have widely been used as stock art for vulnerable elections since 2016 with the system making a frequent occurrence in news articles discussing the failed state of electronic voting security systems. Fundamental insecure engineering practices combined with a mediocre security implementation on the OS means that unless serious consideration is given to re-engineering and hardening both hardware and software then these machines are not fit-for-purpose and cannot be relied upon to store or hold information in a secure means. </p>
+<h3>Device Internals</h3>
+<p>By opening and investigating the various components on the PCB of the Diebold AccuVote-TSx we were able to learn several key things &#8211; the existence of a JTAG interface &#8211; along with the type of CPU (PXA255). The interface JP-16 is clearly labelled on the PCB as a &#8220;CPU JTAG Interface&#8221; and can be seen at the top right of the PCB photographs on our repository[3]. There is an additional JTAG interface for a CPLD (FPGA) device towards the middle of the board. As well as these features the system also boasts a PIC16F MCU to the middle left of the board[3] which can be associated with a keypad entry device available separately. There exists a number of supporting chips such as the SM501 for multimedia/graphics, numerous frequency xtal&#8217;s, DRAM &#038; SDRAM components as well as a Flash chip and components for the battery charging and power management. The JTAG interface has been identified as a standard 20-PIN ARM JTAG interface, a JTAGulator[4] was used to confirm that the pin layout was standard. Review of the components identified that the CPU is an Intel PXA255 processor, this allowed for us to connect a TinCanTools Flyswatter 2[5] which supports Intel X-Scale processors and is also usable with open-source programming tool OpenOCD[6]. If you are not familiar with this particular JTAG programmer, it comes highly recommended, as it offers a FT2232 based interface for working with a number of common SBC devices (Raspberry Pi, Beaglebone etc.) and supports many popular ARM devices. By booting the device and doing some cursory memory analysis we were able to learn that the unit runs a custom version of Windows CE .NET 4.1. Information of this nature can be learned by browsing the device menus and reading through memory dumps (more on this in a moment). The following software versions were learned.</p>
+<p><code>Windows CE Kernel for ARM (Thumb Enabled) Built on May 24 2002 at 21:34:01<br />
+OS Rev: 4.10 (Build 908)<br />
+BallotStation Version: 4.7.8</code></p>
+<p>I hooked up our JTAG programmer and set the &#8220;openocd.cfg&#8221; file to make use of a PXA255. You can find a working configuration for OpenOCD in our code repository[7] with comments. </p>
+<h3>CPU Manipulation</h3>
+<p>Once we had connected our programmer to the device, we were able to establish a JTAG debugging interface to perform on-chip debugging. The following output can be seen using our configuration file[7] when launching openocd.</p>
+<p><code>Info : pxa255.cpu: hardware has 2 breakpoints and 2 watchpoints<br />
+adapter speed: 300 kHz<br />
+trst_and_srst separate srst_nogate trst_push_pull srst_open_drain connect_deassert_srst<br />
+Info : clock speed 300 kHz<br />
+Info : JTAG tap: pxa255.cpu tap/device found: 0x69264013 (mfg: 0x009 (Intel), part: 0x9264, ver: 0x6)</code></p>
+<p>We can see from the above that the manufacturer code and device details matched our expected PXA255 configuration. OpenOCD provides a &#8220;gdb&#8221; interface on TCP port 3333 and a console CLI session on TCP port 4444. First we connected to the CLI to &#8220;halt reset&#8221; the system.</p>
+<p><code>> reset halt<br />
+adapter speed: 300 kHz<br />
+JTAG tap: pxa255.cpu tap/device found: 0x69264013 (mfg: 0x009 (Intel), part: 0x9264, ver: 0x6)<br />
+target halted in ARM state due to debug-request, current mode: Supervisor<br />
+cpsr: 0x600000d3 pc: 0x00000000<br />
+MMU: disabled, D-Cache: disabled, I-Cache: disabled<br />
+(processor reset)</code></p>
+<p>This places the device at the start of it&#8217;s boot sequence, allowing us to debug the bootloader and manipulate the OS from a privileged position. The openocd output indicates that we are executing in Supervisor mode. We now connect to the device using &#8220;gdb&#8221;. We specify that the device is using the Intel XScale architecture and then use the gdb remote debugging port provided through OpenOCD.</p>
+<p><code>(gdb) set arch xscale<br />
+The target architecture is assumed to be xscale<br />
+(gdb) target remote localhost:3333<br />
+Remote debugging using localhost:3333<br />
+0x00000000 in ?? ()<br />
+(gdb) </code></p>
+<p>We are now able to manipulate the running code on the device. This required some understanding of how the PXA255 memory maps connected chips. The flash chip is wired to PXA255 &#8220;chip select 0&#8221; which has a memory region of 0x00000000 to 0x04000000. This is a flash memory region and cannot be written to using traditional &#8220;gdb&#8221; commands, trying to hot patch the boot loader will fail. DRAM and SDRAM are mapped above this range and it is possible to read and write to the running OS from gdb by accessing the pages at 0x08000000 and up. However, a trick was inserted to prevent debugging of the OS by Diebold, causing an exception. To access the host OS we will first need to handle this exception gracefully and let the OS boot, once Ethernet Boot (eBoot &#8211; the Windows CE boot loader) has output the &#8220;Launching OS&#8221; message, the system will appear to hang as this exception is raised. Interrupt the execution and walk through the exception to boot to the OS simply using &#8220;stepi&#8221;.</p>
+<p><code>Program received signal SIGINT, Interrupt.<br />
+0xffff0018 in ?? ()<br />
+(gdb) x/i $pc<br />
+=> 0xffff0018:	ldr	pc, [pc, #984]	; 0xffff03f8<br />
+(gdb) stepi<br />
+0x841047a8 in ?? ()<br />
+(gdb) x/i $pc<br />
+=> 0x841047a8:	sub	lr, lr, #4<br />
+(gdb) cont<br />
+Continuing.</code></p>
+<p>This allows for full read and write of memory inside the host OS and can be used to manipulate the election software to now do anything you like. Our goal was to run our own code and binaries. Windows CE .NET 4.1 images can be built manually using an antiquated tool released by Microsoft called Platform Builder 4.1. Using this and legacy versions of Visual Studio it is possible to define an ARMv4 thumb mode BSP (board support package) and compile stand-alone executables and programs that will run on Windows CE .NET 4.1. This came in handy when we began to explore the OS and learned that many core components had been removed.</p>
+<h3>BallotStation &#038; Windows CE</h3>
+<p>Once we had achieved the ability to debug the AccuVote-TSx, the first thing we did was dump the flash memory chip region 0x00000000 &#8211; 0x04000000. This contained the boot loader, OS image as well as a filesystem used for storing encrypted election data. By downloading and saving a backup of this memory region, you will be able to restore the machine at a later date &#8211; it is important that you take such a backup as rebuilding the OS from scratch is not for the faint of heart. The OS contains a minimal bare-bones environment with many core executable functions disabled, further hardening of Windows CE has been done in the registry preventing access to the taskbar and familiar interfaces. However there does exist a number of common DLL&#8217;s that enable networking functionality and support for hardware devices. Once we had obtained the flash image we were able to extract both the boot loader and the Windows CE image, which stores DLL&#8217;s and EXE&#8217;s in a Table of Contents[8] that are then mapped to RAM. Using binwalk and some Windows CE specific utilities [9] it is possible to extract and manipulate a Windows CE nk.bin file and explore the OS build contents. The following executable binaries are available to an attacker for use in subsequent attacks.</p>
+<p><code>     6/24/2009  23:46:13      275456  nk.exe          - OS kernel<br />
+     6/24/2009  23:46:45      198656  filesys.exe     - File system support<br />
+     6/24/2009  23:46:45      704512  gwes.exe        - graphical environment<br />
+     6/24/2009  23:42:38       26624  device.exe      - internal windows stuff<br />
+     6/24/2009  23:46:45      108544  connmc.exe      - connection manager, opens networking dialog<br />
+     6/24/2009  23:46:45       33280  rnaapp.exe      - remote network access, for dialup networking<br />
+     6/24/2009  23:46:07       10752  taskman.exe     - not an actual task manager, just taskman for CE<br />
+     6/24/2009  23:46:07        6144  dst.exe         - diebold ??<br />
+     6/24/2009  23:46:09      563200  avinstaller.exe - assure security umbrella<br />
+     6/24/2009  23:46:08        3584  elova.exe       - ??</code></p>
+<p>You can find extracted copies of the boot loader and ROM in our code repository[9]. With this memory layout it is possible to begin exploring the device using GDB and manipulating the software for instance to change voting behaviour or other neat hacks. However we wanted to load our own binaries into the OS and overwriting EXE&#8217;s in RAM whilst viable, is certainly painstakingly difficult to do reliably. </p>
+<h3>Third-Party Hardware</h3>
+<p>It is possible to use a range of 3rd party hardware in lieu of the rather expensive Diebold supported components. We discovered that a number of DLL&#8217;s in the OS[8] were for common LAN networking equipment, particularly those using a NE2000 chipset. There exists also support for some common 3rd party hardware which is available by default in Windows CE 4.1 based OS builds, as we witnessed by attempting to build our own ROM using Platform Builder. By obtaining a Compact Flash card and PCMCIA adapter[10], we were able to add 64MB to 1GB of storage for $20 (the Diebold storage cards are expensive at $350 or more) and also we added a 100m/bit Ethernet adapter using the NE2000 chipset. Plugging in the Ethernet adapter showed the device made DHCP requests indicating the adapter was working. We port scanned the unit and found nothing of Interest[11] however we suspect that the Windows CE 4.1 DHCP client likely suffers from many known DHCP weaknesses that have been patched in more recent versions of Windows CE (now known as Windows Mobile). Additionally once we booted the OS with a working storage card, the option to &#8220;Download Election&#8221; was no longer greyed out and we could see that the unit had identified the storage as it&#8217;s main storage. If you are a government on a budget, you can save money using 3rd party hardware instead of Diebold certified equipment which uses the same chip sets.</p>
+<h3>Flash Memory Weaknesses</h3>
+<p>The flash memory chip in use was identified as a &#8220;Numonyx® Axcell&#x2122; P30-65nm&#8221; 64-Mbit device, originally made by Intel until it was acquired by Numonyx. This process was painstakingly difficult for a number of reasons, the least of those being that we could not locate the flash chip on the PCB easily. We discovered that the flash memory chip in use did not set one-time-programmable (OTP) fuses, the chip still had the ability to be User Programmable despite offering security features that would have protected this ROM memory against manipulation. There had been no security codes set and nothing stood in our way of reading and writing to the flash chip once we did some calculations to ascertain the chip depth (16bits), bus width (32bits) and bus clock rate (200MHz) from the PXA255 CPU. It is important when programming flash memory over JTAG to learn the correct memory geometry and clock rate for communicating with the flash chip, we discovered that by programming at the wrong clock speed the programmer would often introduce NULL bytes or cause corruption of the flash image resulting in a bricked unit until reprogrammed correctly. Our OpenOCD configuration file contains comments for adjusting the file from working with the CPU in gdb to using the &#8220;flash&#8221; commands in OpenOCD, the main change is the JTAG clock speed must be adjusted to communicate with the flash chip bus. Once we had correctly setup the flash memory bank in OpenOCD we were able to interrogate the flash using &#8220;flash info 0&#8221;. </p>
+<p><code>Flash Manufacturer/Device: 0x0089 0x891c<br />
+expected one protection register field, but found 2<br />
+#0 : cfi at 0x00000000, size 0x04000000, buswidth 4, chipwidth 2<br />
+	#  0: 0x00000000 (0x10000 64kB) protected<br />
+...snip snip...<br />
+	#258: 0x03fc0000 (0x40000 256kB) protected<br />
+CFI flash: mfr: 0x0089, id:0x891c<br />
+qry: 'QRY', pri_id: 0x0001, pri_addr: 0x010a, alt_id: 0x0000, alt_addr: 0x0000<br />
+Vcc min: 1.7, Vcc max: 2.0, Vpp min: 8.5, Vpp max: 9.5<br />
+typ. word write timeout: 256 us, typ. buf write timeout: 512 us, typ. block erase timeout: 1024 ms, typ. chip erase timeout: 1 ms<br />
+max. word write timeout: 512 us, max. buf write timeout: 1024 us, max. block erase timeout: 4096 ms, max. chip erase timeout: 1 ms<br />
+size: 0x2000000, interface desc: 1, max buffer write size: 0x40<br />
+intel primary algorithm extend information:<br />
+pri: 'PRI', version: 1.4<br />
+feature_support: 0x1e6, suspend_cmd_support: 0x1, blk_status_reg_mask: 0x3<br />
+Vcc opt: 1.8, Vpp opt: 9.0<br />
+protection_fields: 2, prot_reg_addr: 0x80, factory pre-programmed: 8, user programmable: 8</code></p>
+<p>Immediately we noticed that the flash chip has a user programmable state and does not make use of effective protections to deter manipulation of the code installed on the device. This opens the unit upto bootkit attacks which we demonstrated on the bootloader by changing commonly seen strings and reflashing the modified binary image onto the device. Before flashing such a device you must first disable the write protection (enabled at boot) using &#8220;flash protect 0 0 last off&#8221; in OpenOCD. Once you have disabled the protection, the flash chip must be erased using &#8220;flash erase_sector&#8221; or similar commands. A properly erased flash chip will have it&#8217;s data set to all 1&#8217;s and show 0xffffffff when read through gdb. We noticed that if we enabled &#8220;&#8211;debug&#8221; with OpenOCD this operation tended to be more successful and often required multiple attempts to successfully erase and subsequently use &#8220;flash write_image&#8221; to upload a new or modified ROM onto the device. We are now able to permanently bootkit the Diebold AccuVote-TSx system without leaving additional evidence such as a visible smart card. This improves on existing supply chain attack methods by allowing the introduction of malware without the need for additional hardware, an attacker just needs to be able to have physical access to the machine for re-flashing over JTAG. We were able to make modifications to the eBoot boot loader without any complications, allowing to disable and subvert any additional security checks on the device.</p>
+<p><img decoding="async" fetchpriority="high" src="wp-content/uploads/2019/10/bootloader.jpg" alt="" width="894" height="462" class="aligncenter size-full wp-image-6295" srcset="wp-content/uploads/2019/10/bootloader.jpg 894w, wp-content/uploads/2019/10/bootloader-300x155.jpg 300w, wp-content/uploads/2019/10/bootloader-768x397.jpg 768w, wp-content/uploads/2019/10/bootloader-600x310.jpg 600w" sizes="(max-width: 894px) 100vw, 894px" /></p>
+<h3>Injecting Binaries</h3>
+<p>With the ability to re-flash the device, added networking capabilities, removable storage and debugging of the device in supervisor mode it was now time to complete our hack by executing our own binaries in-place of the BallotStation 4.7 software. An attacker could use these same methods to run malware or further extend the work for nefarious purposes. By adding a Compact Flash card with the &#8220;invaders.exe&#8221; binary[8] in a FAT32 formatted partition, we were able to execute this binary by overwriting the startup binary path in memory through our gdb interface. By Reverse Engineering the ROM and doing debugging we found that the executable path is stored as a unicode string at memory address 0x845bb440. By overwriting this with our own &#8220;\Storage Card\invaders.exe&#8221; string, it was possible to execute a Windows CE Space Invaders game in place of the BallotStation software. Thanks to a lack of ASLR and shared binary components, we found that this address was consistent across our units. The payload to achieve this in gdb can be found here and in our repo. Simply interrupt the execution of the OS after the boot loader has launched and the chime has played.</p>
+<p><code>(gdb) set {char}0x845bb442 = 'S'<br />
+(gdb) set {char}0x845bb444 = 't'<br />
+(gdb) set {char}0x845bb446 = 'o'<br />
+(gdb) set {char}0x845bb448 = 'r'<br />
+(gdb) set {char}0x845bb44a = 'a'<br />
+(gdb) set {char}0x845bb44c = 'g'<br />
+(gdb) set {char}0x845bb44e = 'e'<br />
+(gdb) set {char}0x845bb450 = ' '<br />
+(gdb) set {char}0x845bb452 = 'C'<br />
+(gdb) set {char}0x845bb454 = 'a'<br />
+(gdb) set {char}0x845bb456 = 'r'<br />
+(gdb) set {char}0x845bb458 = 'd'<br />
+(gdb) set {char}0x845bb45a = '\\'<br />
+(gdb) set {char}0x845bb45c = 'i'<br />
+(gdb) set {char}0x845bb45e = 'n'<br />
+(gdb) set {char}0x845bb460 = 'v'<br />
+(gdb) set {char}0x845bb462 = 'a'<br />
+(gdb) set {char}0x845bb464 = 'd'<br />
+(gdb) set {char}0x845bb466 = 'e'<br />
+(gdb) set {char}0x845bb468 = 'r'<br />
+(gdb) set {char}0x845bb46a = 's'<br />
+(gdb) set {char}0x845bb46c = '.'<br />
+(gdb) set {char}0x845bb46e = 'e'<br />
+(gdb) set {char}0x845bb470 = 'x'<br />
+(gdb) set {char}0x845bb472 = 'e'<br />
+(gdb) set {char}0x845bb474 = '\x00'<br />
+</code></p>
+<p>Once this memory is overwritten with our own path to an executable, we could also run many of the built-in EXE&#8217;s of the diebold system (or indeed load in other Windows CE based applications such as file exploring utilities). The built-in executable&#8217;s do not provide much in the way of interest and it was not possible to use the base OS to access a file explorer without use of clever ROP, custom application building or registry modifications, it is much easier to load an executable from a Compact Flash card than it is to try and insert your own into RAM (although this is entirely possible). The device could also be used now to port Linux as the main-line kernel has support for the SM501 chip which has been a hindrance when building our own Windows CE based ROM&#8217;s. The SM501 device was not supported by default in Windows CE .NET 4.1 so device drivers for eBoot are not as readily available. A screen shot below shows what happens when a failed execution occurs (i.e. the binary does not exist at the path specified).</p>
+<p><img decoding="async" src="wp-content/uploads/2019/10/injection.png" alt="" width="898" height="276" class="aligncenter size-full wp-image-6297" srcset="wp-content/uploads/2019/10/injection.png 898w, wp-content/uploads/2019/10/injection-300x92.png 300w, wp-content/uploads/2019/10/injection-768x236.png 768w, wp-content/uploads/2019/10/injection-600x184.png 600w" sizes="(max-width: 898px) 100vw, 898px" /></p>
+<h3>FFX Election Data Encryption Keys</h3>
+<p>Whilst conducting this research we discovered the device contained a number of password protected RSA private keys and certificate files that are used for encrypted file system purposes. These keys have been extracted and are available in our repository. The machines have been found to hold previous election data protected by the use of these keys. We are continuing our research into how information is stored securely in the device (spoiler, it&#8217;s 2003 secure).</p>
+<p><img decoding="async" src="wp-content/uploads/2019/10/encrypt2-225x300.jpeg" alt="" width="225" height="300" class="aligncenter size-medium wp-image-6329" srcset="wp-content/uploads/2019/10/encrypt2-225x300.jpeg 225w, wp-content/uploads/2019/10/encrypt2-768x1024.jpeg 768w, wp-content/uploads/2019/10/encrypt2-600x800.jpeg 600w, wp-content/uploads/2019/10/encrypt2.jpeg 1536w" sizes="(max-width: 225px) 100vw, 225px" /></p>
+<h3>Conclusion</h3>
+<p>The Diebold Accuvote-TSx provides security through obsoletion, it makes use of what was cutting edge technology in 2003 &#8211; Windows CE .NET &#8211; and has a number of serious hardware security issues that would be unexpected in a device being produced for production purposes of this nature. The ability to JTAG the system in Supervisor mode gives an attacker full reign over the device with moderate ease &#8211; allowing the boot loader to be manipulated and any protections in the OS bypassable. An attacker could infect the machine with a bootkit that would be unnoticed as does not require the changing of dip switches or additional hardware adding to the unit for deployment, thus offering a viable and stealthy means to perform a supply chain infection attack. The OS used offers very limited security protections against modern exploitation techniques and what little OS security does exist can be easily bypassed with such privileged debugging interfaces. The flash memory chips used for storing the ROM offer security protections and OTP fuses which were neglected to be enabled, allowing an adversary to manipulate and flash custom code. The device is essentially an over-sized Windows CE .NET 4.1 tablet making use of engineering and design practices common in 2003 but which are wholly insufficient for security purposes today. In short, the TL;DR, the device is not fit-for-purpose when used as an electronic voting system, however we feel it makes an excellent table top arcade system for playing classic video games.</p>
+<p><img decoding="async" loading="lazy" src="wp-content/uploads/2019/10/doomup-864x1024.jpg" alt="DooM" width="864" height="1024" class="aligncenter size-large wp-image-6354" srcset="wp-content/uploads/2019/10/doomup-864x1024.jpg 864w, wp-content/uploads/2019/10/doomup-253x300.jpg 253w, wp-content/uploads/2019/10/doomup-768x910.jpg 768w, wp-content/uploads/2019/10/doomup-600x711.jpg 600w, wp-content/uploads/2019/10/doomup.jpg 1500w" sizes="(max-width: 864px) 100vw, 864px" /></p>
+<h3>References</h3>
+<p>[0] <a href="https://twitter.com/votingvillagedc">Voting Village Defcon.</a><br />
+[1] <a href="https://twitter.com/RachelTobac/status/1028437783050776576">Rachel Tobac Twitter post</a><br />
+[2] <a href="https://www.usenix.org/legacy/event/evt07/tech/full_papers/feldman/feldman_html/index.html">Security Analysis of the Diebold AccuVote-TS Voting Machine</a><br />
+[3] <a href="https://raw.githubusercontent.com/hackerhouse-opensource/electionhacking/master/photos/PCB_top.jpg">PCB photograph</a><br />
+[4] <a href="http://www.grandideastudio.com/jtagulator/">JTAGulator homepage</a><br />
+[5] <a href="https://www.tincantools.com/flyswatter-2/">TinCanTools FlySwatter 2 JTAG programmer</a><br />
+[6] <a href="http://openocd.org/">OpenOCD homepage</a><br />
+[7] <a href="https://raw.githubusercontent.com/hackerhouse-opensource/electionhacking/master/diebold/openocd.cfg">OpenOCD configuration for Diebold AccuVote-TSx</a><br />
+[8] <a href="https://raw.githubusercontent.com/hackerhouse-opensource/electionhacking/master/rom/pTOC.txt">Windows CE .NET 4.1 binaries and executables in Diebold AccuVote-TSx</a><br />
+[9] <a href="https://github.com/hackerhouse-opensource/electionhacking">Hacker House repository for openocd, ROM &#038; tools</a><br />
+[10] <a href="https://www.hpcfactor.com/hcl/">Windows CE Hardware Compatibility List</a><br />
+[11] <a href="https://raw.githubusercontent.com/hackerhouse-opensource/electionhacking/master/diebold/default-nmap.txt">Nmap port scan results</a></p>
+
+  </div>
+</article>
+
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-backdrop show"></div>
+    
+      </main>
+
+    
+    <footer>
+    <section class="contact middle green fingerprint">
+    <div class="container">
+            <h2>Questions? Contact us now.</h2>
+            <a class="button bcall" href="tel://+1-415-230-0346">Call +1-415-230-0346</a>
+      <a class="button bcontact" href="index.html?p=21">Or send us a message</a>
+    </div>
+  </section>
+  <section class="info fingerprint bottom gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <a class="logo" href="index.html" title="Home page"><span>Hacker House</span></a>
+          <p class="special">In <b>California</b>,<b> London</b> &amp; <b>0.0.0.0/0</b></p>
+          <p><b>US</b> <a href="tel://+1-415-230-0346">+1-415-230-0346</a></p>
+<p><b>UK</b> <a href="tel://+442081231379">+44 (0) 208 123 1379</a></p>
+<p><a href="mailto:info@hacker.house">info@hacker.house</a></p>
+
+          <ul class="social-profiles d-block d-sm-none">
+                        <li><a class="icon-twitter" href="https://twitter.com/myhackerhouse"
+             title="Twitter" target="_blank"><span>Twitter</span></a></li>
+                                    <li><a class="icon-facebook" href="https://www.facebook.com/myhackerhouse"
+             title="Facebook" target="_blank"><span>Facebook</span></a></li>
+                                    <li><a class="icon-youtube" href="https://www.youtube.com/playlist?list=PLFh6TWPhaBdDiT9Xf1JFFk9NuZOpiTr-m"
+             title="YouTube" target="_blank"><span>YouTube</span></a></li>
+                                    <li><a class="icon-github" href="https://github.com/hackerhouse-opensource?tab=repositories"
+             title="Github" target="_blank"><span>Github</span></a></li>
+                      </ul>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 flex-first flex-sm-unordered">
+          <p class="title">More info</p>
+          <nav>
+                          <ul id="menu-main-menu-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"><a href="index.html?p=8">Training</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="index.html?p=6">Services</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1219"><a href="shop-redirect/index.html">Shop</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5425"><a href="index.html?p=5423">Press &#038; Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="index.html?p=11">About</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5557"><a href="index.html?p=15">Labs</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1701"><a href="https://dashboard.hacker.house/">Portal</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38"><a href="index.html?p=21">Contact</a></li>
+</ul>
+                      </nav>
+                  </div>
+                <div class="col-md-4 d-none d-md-block">
+          <p class="title">Subscribe to our latest updates</p>
+          <div class="form">
+            <form id="newsletter-subscription" method="post" action="index.html?p=6240#" data-success="You&#039;ve been subscribed successfully. Thank you!" data-error="An error has occurred. Please try again later.">
+              <input id="newsletter-subscription-input" type="email" data-error="Please enter a valid email and try again." name="email" placeholder="Enter your email" />
+              <input id="newsletter-subscription-submit" type="submit" class="green" name="submit" value="S" />
+              <input type="hidden" id="security" name="security" value="a64e48424f" />
+            </form>
+            <p class="small">We respect your privacy and don't spam.</p>
+          </div>
+          <ul class="social-profiles d-none d-sm-block">
+                        <li><a class="icon-twitter" href="https://twitter.com/myhackerhouse"
+             title="Twitter" target="_blank"><span>Twitter</span></a></li>
+                                    <li><a class="icon-facebook" href="https://www.facebook.com/myhackerhouse"
+             title="Facebook" target="_blank"><span>Facebook</span></a></li>
+                                    <li><a class="icon-youtube" href="https://www.youtube.com/playlist?list=PLFh6TWPhaBdDiT9Xf1JFFk9NuZOpiTr-m"
+             title="YouTube" target="_blank"><span>YouTube</span></a></li>
+                                    <li><a class="icon-github" href="https://github.com/hackerhouse-opensource?tab=repositories"
+             title="Github" target="_blank"><span>Github</span></a></li>
+                      </ul>
+        </div>
+              </div>
+    </div>
+  </section>
+    <section class="terms">
+    <div class="container">
+      <span>&copy; 2024 - Hacker House Ltd</span>
+              <ul id="menu-footer-links" class="menu"><li id="menu-item-313" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-313"><a href="index.html?p=311">Privacy policy</a></li>
+<li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-43"><a rel="privacy-policy" href="index.html?p=17">Terms and conditions</a></li>
+<li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41"><a href="index.html?p=21">Contact</a></li>
+</ul>
+          </div>
+  </section>
+</footer>
+
+    <script>
+	jQuery(function ($) {
+
+		var name = "woocommerce_multicurrency_forced_currency";
+		var expires = 31536000;
+		var path = "/";
+		var domain = "";
+		var secure = true;
+
+		var currentURL = "https://hacker.house/lab/hacking-elections-diebold-accuvote-tsx-runs-space-invaders/";
+
+		$(".woocommerce-currency-selector").on("change", function () {
+
+			wpCookies.set(name, this.value, expires, path, domain, secure);
+
+						$(document.body).trigger("wc_fragment_refresh");
+
+						window.location = currentURL;
+		});
+	});
+</script>
+
+	<div id="cookies-notice" tabindex="0">
+    <button class="close icon-close accept-button"></button>
+    <h2>All Computers Are Broken</h2>
+		<p>We use cookies to understand how you use our site and to improve your browsing experience. We only use essential cookies required for serving our website to you at all times. By continuing to use our site, you accept our use of essential cookies. If you do not agree to our use of essential cookies, click no here and you will be redirected away from our website.</p>
+    <p>
+      <a class="action accept-button">[Y]es I agree</a><a class="action deny-button">[N]o I do not agree</a>
+    </p>
+		<p class="prompt">~ HH</p>
+	</div>
+
+  	<script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.8.4' id='swv-js'></script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/hacker.house\/wp-json\/","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.8.4' id='contact-form-7-js'></script>
+<script type='text/javascript' src='https://www.google.com/recaptcha/api.js?render=6LcD1jIpAAAAANg22GBOtDGLyrMO3zCjyiRUJ6pN&#038;ver=3.0' id='google-recaptcha-js'></script>
+<script type='text/javascript' src='wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2' id='wp-polyfill-inert-js'></script>
+<script type='text/javascript' src='wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.11' id='regenerator-runtime-js'></script>
+<script type='text/javascript' src='wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script type='text/javascript' id='wpcf7-recaptcha-js-extra'>
+/* <![CDATA[ */
+var wpcf7_recaptcha = {"sitekey":"6LcD1jIpAAAAANg22GBOtDGLyrMO3zCjyiRUJ6pN","actions":{"homepage":"homepage","contactform":"contactform"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=5.8.4' id='wpcf7-recaptcha-js'></script>
+<script type='text/javascript' id='sage/main.js-js-extra'>
+/* <![CDATA[ */
+var hhData = {"ajaxUrl":"https:\/\/hacker.house\/wp-admin\/admin-ajax.php","exitUrl":"https:\/\/www.duckduckgo.com"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/themes/hackerhouse/dist/scripts/main_790976ee.js' id='sage/main.js-js'></script>
+  </body>
+</html>

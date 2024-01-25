@@ -1,0 +1,177 @@
+body {
+    background-color: #1c1e1d;
+    color:#FFF;
+    font-family: Raleway;
+}
+
+h1,h2,h3 {
+    font-family: Montserrat;
+    font-weight:bold;
+    font-size: 72px;
+    margin-top:40px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 48px;
+}
+
+div.modules {
+    text-align: center;
+    margin-top:40px;
+}
+
+div.modules div.module-desc {
+    font-size:16px;
+    margin-top:10px;
+}
+
+div.quote {
+    margin-top:50px;
+}
+
+div.quote div.quotebox {
+    border: 1px dashed #ececec;
+    border-radius:21px;
+    background-color:#313131;
+    padding:30px;
+}
+
+div.quote div.quotebox div.nicewords:before {
+    content: open-quote;
+    position: absolute;
+    margin-left: -23px;
+    margin-top:-20px;
+    font-family: 'Trebuchet MS', sans-serif; font-weight: 400; font-style: normal; font-size: 48px; color: rgb(126, 211, 33);
+}
+
+div.quote div.quotebox div.nicewords:after {
+    content: close-quote;
+    position: absolute;
+    margin-top:-15px;
+    font-family: 'Trebuchet MS', sans-serif; font-weight: 400; font-style: normal; font-size: 48px; color: rgb(126, 211, 33);
+}
+
+div.quote img {
+    border-radius: 234px;
+}
+
+div.quote div.quotebox div.quote-name {
+    font-size:12px;
+    color: rgb(126, 211, 33);
+}
+
+div.emailbox {
+    width:420px;
+    height:60px;
+    margin:20px auto 0px auto;
+}
+
+div.emailbox div.email {
+    float:left;
+    background-color: #FFF;
+    width:300px;
+    padding:5px 5px 5px 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+div.emailbox div.email input {
+    border:0px;
+    color:#000;
+    height:30px;
+    width:100%;
+}
+
+div.emailbox div.button {
+    float:left;
+    background-color:rgb(126, 211, 33);
+    width:120px;
+    padding:5px;
+    text-align:center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+div.emailbox div.button:hover {
+    background-color: rgb(102, 158, 43);
+}
+
+div.emailbox div.button:hover input {
+    background-color: rgb(102, 158, 43);
+}
+
+div.emailbox div.button input {
+    background-color:rgb(126, 211, 33);
+    height:30px;
+    border:0px;
+}
+
+div.whatisit {
+    margin-top:50px;
+    font-size:16px;
+    text-align: center;
+}
+
+div.whatisit div.whatisit-desc {
+    margin-top:40px;
+}
+
+div.benefits {
+    text-align: center;
+    margin-top:40px;
+    font-size:16px;
+}
+
+div.benefits img {
+    height:75px;
+    width:95px;
+}
+
+div.benefits div.benefit-desc {
+    font-weight: bolder;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+div.cta {
+    background-color:rgb(126, 211, 33);
+    margin-top:40px;
+    text-align: center;
+    padding-bottom:30px;
+}
+
+div.cta a {
+    text-decoration: none;
+    color:#FFFFFF;
+}
+
+div.cta div.free-trial-box {
+    width:200px;
+    background-color: rgb(102, 158, 43);
+    cursor:pointer;
+    height:80px;
+    margin:auto;
+    margin-top:30px;
+    line-height: 80px;
+    border-radius: 5px;
+}
+
+div.cta div.free-trial-box:hover {
+    background-color: rgb(100, 154, 43);
+    font-weight: bold;
+}
+
+div.footer {
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+div.footer a {
+    color:#FFF;
+    text-decoration: none;
+}
+
+div.footer div:last-child {
+    text-align: right;
+}

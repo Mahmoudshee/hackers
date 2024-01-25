@@ -1,0 +1,766 @@
+<!doctype html>
+
+<html lang="en-GB">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<meta property="fb:page_id" content="413247712183723">
+	<meta property="og:site_name" content="Hacker House">
+	<meta name="twitter:site:id" content="3358636906">
+	<meta property="og:type" content="article">
+	<meta name="twitter:card" content="summary_large_image">
+	<title>Training</title>
+	<link rel="canonical" href="index.html?p=8">
+	<meta property="og:title" content="Training">
+	<meta property="og:url" content="https://hacker.house/training/">
+	<meta property="og:image" content="https://hacker.house/wp-content/themes/hackerhouse/resources/assets/images/share.jpg">
+	<meta name="twitter:title" content="Training">
+	<meta name="twitter:url" content="https://hacker.house/training/">
+	<meta name="twitter:image" content="https://hacker.house/wp-content/themes/hackerhouse/resources/assets/images/share.jpg">
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='https://ajax.googleapis.com/' />
+<link rel='stylesheet' id='wp-block-library-css' href='wp-includes/css/dist/block-library/style.min.css?ver=016ba876e3c4277ef6dbd501ab8e6497' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.4' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css' href='wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=8.4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css' href='wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=8.4.0' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css' href='wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=8.4.0' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='sage/main.css-css' href='wp-content/themes/hackerhouse/dist/styles/main_790976ee.css' type='text/css' media='all' />
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js' id='jquery-js'></script>
+<script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.8.4.0' id='jquery-blockui-js' defer data-wp-strategy='defer'></script>
+<script type='text/javascript' id='wc-add-to-cart-js-extra'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View basket","cart_url":"https:\/\/hacker.house\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=8.4.0' id='wc-add-to-cart-js' defer data-wp-strategy='defer'></script>
+<script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.8.4.0' id='js-cookie-js' defer data-wp-strategy='defer'></script>
+<script type='text/javascript' id='woocommerce-js-extra'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=8.4.0' id='woocommerce-js' defer data-wp-strategy='defer'></script>
+<script type='text/javascript' id='utils-js-extra'>
+/* <![CDATA[ */
+var userSettings = {"url":"\/","uid":"0","time":"1706186835","secure":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-includes/js/utils.min.js?ver=016ba876e3c4277ef6dbd501ab8e6497' id='utils-js'></script>
+<link rel="https://api.w.org/" href="https://hacker.house/wp-json/" /><link rel="alternate" type="application/json" href="https://hacker.house/wp-json/wp/v2/pages/8" /><link rel='shortlink' href='index.html?p=8' />
+<script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		if (window.wfLogHumanRan) { return; }
+		window.wfLogHumanRan = true;
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//hacker.house/?wordfence_lh=1&hid=BF636939B97BA61AEFA0EC3F57D9639B');
+</script>	<link rel="shortcut icon" href="https://hacker.house/wp-content/themes/hackerhouse/dist/images/favicon.png" />
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<link rel="icon" href="wp-content/uploads/2018/07/cropped-hh-favico-32x32.png" sizes="32x32" />
+<link rel="icon" href="wp-content/uploads/2018/07/cropped-hh-favico-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="wp-content/uploads/2018/07/cropped-hh-favico-180x180.png" />
+<meta name="msapplication-TileImage" content="https://hacker.house/wp-content/uploads/2018/07/cropped-hh-favico-270x270.png" />
+</head>
+  <body class="page-template page-template-page-training page-training page page-id-8 theme-hackerhouse/resources woocommerce-no-js woocommerce-multicurrency-USD training">
+    
+    <div class="container">
+  <header>
+    <div class="row">
+      <div class="col-md-12">
+        <a class="logo" href="index.html" title="Home page"><span>Hacker House</span></a>
+                <a class="menu" title="Menu"><span></span><span></span><span></span></a>
+        <nav class="main-menu">
+                      <ul id="menu-main-menu" class="menu"><li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-8 current_page_item menu-item-37"><a href="index.html?p=8" aria-current="page">Training</a></li>
+<li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="index.html?p=6">Services</a></li>
+<li id="menu-item-1219" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1219"><a href="shop-redirect/index.html">Shop</a></li>
+<li id="menu-item-5425" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5425"><a href="index.html?p=5423">Press &#038; Blog</a></li>
+<li id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="index.html?p=11">About</a></li>
+<li id="menu-item-5557" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5557"><a href="index.html?p=15">Labs</a></li>
+<li id="menu-item-1701" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1701"><a href="https://dashboard.hacker.house/">Portal</a></li>
+<li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38"><a href="index.html?p=21">Contact</a></li>
+</ul>
+                  </nav>
+      </div>
+    </div>
+  </header>
+</div>
+
+    <main class="main">
+            
+    <div class="back-slash">
+  <div class="container">
+    <section class="page-header-title">
+              <h1 ><span>Training</span></h1>
+          </section>
+  </div>
+</div>
+
+<div class="bottom-back-slash-desktop">
+  <div class="container">
+    <section class="widget training-subtitle">
+      <div class="content">
+        <h2>Practical Cyber Security Training</h2>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div class="training-detail-bg">
+
+  <div class="training-detail-bg-img">
+    <div class="container force-front">
+
+      <section class="widget handsonhacking-course">
+        <div class="inner">
+          <div class="clearer">
+            <div class="course-title">
+              <h2>Hands-on Hacking™</h2>
+              <p>Learn practical ethical hacking skills online with Hacker House</p>
+
+            </div>
+            <div class="price">
+              <div class="row">
+                                  <div class="col col-3">
+                    <span class="presale vertical-aligned">BOOK LAUNCH SPECIAL</span>
+                  </div>
+                
+                
+                                <div class="col right col-9">
+                  <span class="current-price">&#36;&nbsp;550</span>
+                                      <span class="normal-price">&#36;&nbsp;990</span>
+                  
+                  		<p class="availability"><font color="white">*Price not inclusive of taxes</font></p>
+                </div>
+                <a href="product/hands-on-hacking-on-demand-pre-sale/index.html" class="button fullgreen">BUY NOW</a>
+                              </div>
+            </div>
+          </div>
+          <div class="course-items">
+            <div class="item blue">
+                            <img src="wp-content/uploads/2018/11/chat-blue.png" alt="Exclusive forum access">
+                            <h3>Exclusive forum access</h3>
+
+              
+                            <ul>
+                              <li>Ask questions and get help from alumni community and Hacker House staff.</li>
+                              <li>Latest access on upcoming news, extra challenges, tips and exclusive content.</li>
+                            </ul>
+              
+            </div>
+            <div class="item green">
+                            <img src="wp-content/uploads/2018/11/goal.png" alt="Learn at your own pace">
+                            <h3>Learn at your own pace</h3>
+              
+                            <ul>
+                              <li>High quality instructional videos and comprehensive course materials.</li>
+                              <li>Learn everything you need to make your next career move in cyber security.</li>
+                            </ul>
+                          </div>
+            <div class="item red">
+                            <img src="wp-content/uploads/2018/11/beaker-red.png" alt="Download Labs">
+                            <h3>Download Labs</h3>
+
+              
+                            <ul>
+                              <li>Every module includes extensive downloadable content, code and labs.</li>
+                              <li>Set up your own virtual playground, continuous learning after you&#039;ve finished the course.</li>
+                            </ul>
+                          </div>
+          </div>
+          <div class="modules">
+            <h2><span>12</span> Module Course</h2>
+
+            
+            <ol>
+
+                          <li>
+                <img src="wp-content/uploads/2018/11/balance.png" alt="Ethics &amp; Legalities">
+                <h3>Ethics &amp; Legalities</h3>
+              </li>
+
+                          <li>
+                <img src="wp-content/uploads/2018/11/brain.png" alt="Open-Source Intelligence">
+                <h3>Open-Source Intelligence</h3>
+              </li>
+
+                          <li>
+                <img src="wp-content/uploads/2018/11/globe.png" alt="DNS &amp; Domain Hacking">
+                <h3>DNS &amp; Domain Hacking</h3>
+              </li>
+
+                          <li>
+                <img src="wp-content/uploads/2018/11/mail.png" alt="E-Mail attacks &amp; Mail infrastructure">
+                <h3>E-Mail attacks &amp; Mail infrastructure</h3>
+              </li>
+
+                          <li>
+                <img src="wp-content/uploads/2018/11/server.png" alt="Web Server Hacking">
+                <h3>Web Server Hacking</h3>
+              </li>
+
+                          <li>
+                <img src="wp-content/uploads/2018/11/shield.png" alt="VPN Attacks">
+                <h3>VPN Attacks</h3>
+              </li>
+
+                          <li>
+                <img src="wp-content/uploads/2018/11/server2.png" alt="File Servers &amp; Internal Attacks">
+                <h3>File Servers &amp; Internal Attacks</h3>
+              </li>
+
+                          <li>
+                <img src="wp-content/uploads/2018/11/hammer.png" alt="UNIX Server Infrastructure">
+                <h3>UNIX Server Infrastructure</h3>
+              </li>
+
+                          <li>
+                <img src="wp-content/uploads/2018/11/hd.png" alt="Databases">
+                <h3>Databases</h3>
+              </li>
+
+                          <li>
+                <img src="wp-content/uploads/2018/11/soft.png" alt="Web Application Assessments">
+                <h3>Web Application Assessments</h3>
+              </li>
+
+                          <li>
+                <img src="wp-content/uploads/2018/11/lock.png" alt="Windows Enterprise Environments">
+                <h3>Windows Enterprise Environments</h3>
+              </li>
+
+                          <li>
+                <img src="wp-content/uploads/2018/11/finger.png" alt="Art of Password Cracking">
+                <h3>Art of Password Cracking</h3>
+              </li>
+
+                        </ol>
+            <div class="row">
+              <div class="details blue col-sm-6">
+                <h4>More details</h4>
+
+                
+                <ul>
+                                    <li>
+
+                      
+                        
+
+                        <a class="modal-open-link">Intro &amp; Prerequisites</a>
+
+                        
+                        <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <a class="btn-close" data-dismiss="modal" aria-label="Close"></a>
+                              </div>
+                              <div class="modal-body">
+                                <div class="post-content">
+                                  <article>
+                                    <div class="content">
+                                      <h1>Intro &amp; Prerequisites - Hands-on Hacking™</h1>
+                                      <h2>Course Description</h2>
+<p>Hacker House Hands-On Hacking course is an intensive introductory course that teaches applied hacking methodologies in a hands-on practical orientated approach. Our course is engineered from decades of experienced cyber security practitioner’s knowledge to educate students on common cyber security tasks. Our course is delivered by expert hackers to prepare students on adversarial thinking and equip them for tasks conducted in a number of different cyber security roles. Our team is dedicated to ensuring that each student is adequately prepared and capable of performing several applied hacking concepts to real- world problems. We teach the theoretical concepts required for each assessment activity, provide instructor led demonstrations and then hands-on practical labs to be completed. Our course lab contents and modules are downloadable and can be re-used by students to continue learning beyond the course.</p>
+<p>Our labs are provided as an educational resource to further enhance student learning and as a reference material for on-the-task assessment activities in future. We teach you how to hack into computers so you can better defend against and understand the methodologies used by hackers to breach systems.</p>
+<h2>Student Pre-requisites</h2>
+<p>We teach students from a grounds-up approach meaning you are not necessarily an expert in the technology field. Our students have come from all manner of technical environments or are currently attempting to enter industries in technical job roles. We however do require that students can demonstrate technical proficiency and are comfortable with computing tasks. To benefit the most from our course as a student you should be comfortable with the following topics:</p>
+<ul>
+<li>Basic TCP/IP networking</li>
+<li>Comfortable using Linux and performing general computer administration tasks</li>
+<li>Knowledge of programming languages are an advantage but not essential</li>
+</ul>
+<p>As this is an introductory course designed for training people into junior and mid-level positions in the cyber security field, you should be competent with configuring your computers network interfaces and doing routine administration tasks beforehand.</p>
+<p>If you do not understand basic concepts of computers and networking such as “what is an IP address”, “how to list files and processes” or “what is a firewall” then it is advised to take a course in Linux fundamentals and TCP/IP networking before approaching our course. If you can answer the example questions above then this course is likely suitable for you. Typical students attending our course are working in or towards jobs within IT and technology realms.</p>
+<h2>Hardware Requirements</h2>
+<p>You hardware that meets the following recommended minimum technical specifications to complete our course:</p>
+<ul>
+<li>2 or more CPU cores (Intel i3 &amp; above recommended)</li>
+<li>At least 2-4gb of RAM</li>
+<li>Approximately 40-50gb free hard disk space (you may be ok with less)</li>
+<li>Virtual Box (https://www.VirtualBox.org)</li>
+</ul>
+<p>You can try a sample of our practical components to assess your suitability before buying the course. This module is intended to be challenging to our students and so do not be worried if you do not complete all of the module, it is intended as a guide to show you what the course is about.</p>
+<h2>Objectives</h2>
+<p>We teach how to conduct network and application security assessments from a real-world scenario driven hacker’s approach. Students who complete our course leave with a core competency of skills that are applicable to many cyber security roles. Students will have performed a number of practical hands-on assessment activities covering different network perspectives and aimed at understanding the how’s and why’s of how breaches occur. Students completing this course will leave with an understanding of performing the following assessment activities:</p>
+<ul>
+<li>Open-source Intelligence Review</li>
+<li>External Infrastructure Assessments</li>
+<li>Internal Infrastructure Assessments</li>
+<li>Web Application Assessments</li>
+<li>Perform a Penetration Test</li>
+</ul>
+<p>Our course will leave students with a clear understanding of the fundamentals in performing security assurance exercises against a range of technologies. This can help assist you with deploying secure platforms, assessing company infrastructure for weaknesses and defending assets such as databases or servers.</p>
+<h2>Cancellation Policy</h2>
+<p>Hacker House completely understands that stuff happens; life happens; and sometimes we need to cancel. You may cancel up to two weeks before the launch date of April 19th 2019 and we can give you a full refund (minus ticketing charges). If you cancel on us last minute it is a bit trickier; we are a small team and we will not be able to guarantee a refund at that point. We are not able to process any refunds for the pre-sale of Hands on Hacking course beyond April 4th 2019. If price is an issue for you, please write us directly and explain your situation; we want to work with as many interested and capable students as we can. We work hard to ensure the quality of our courses and want to do all that we can to give you the maximum content, in a pleasant learning environment to help you reach your potential at the end of our training. Once you purchase access to the course you are provided electronic access to the materials for 12 months from the date of initial sign-on.</p>
+
+                                    </div>
+                                  </article>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+
+                      
+                  </li>
+                                    <li>
+
+                      
+                        <a href="https://static.hacker.house/doc/HackerHouse_HandsOn_Hacking_Syllabus.pdf" target="_blank">Hands-On Hacking Syllabus</a>
+
+                      
+                  </li>
+                                  </ul>
+              </div>
+              <div class="details red col-sm-6">
+                <h4>TRY THE COURSE FOR FREE</h4>
+
+                
+                <ul>
+
+                                    <li>
+
+                                          <a href="free-trial/index.html" target="_blank">Receive a module for free here</a>
+
+                                      </li>
+
+                                    <li>
+
+                                          <a href="free-trial/index.html" target="_blank">No credit card info required</a>
+
+                                      </li>
+
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="offer">
+            <div class="introductory">
+              <h4>Introductory offer</h4>
+              <p>The Hands-on Hacking™ platform launched in April 2019 and our book Hands-on Hacking published in August 2020. We are offering a special discounted rate on our training and our biggest ever savings to get access to our practical on-demand training portal! Don&#039;t miss out on these great savings!</p>
+            </div>
+            <div class="clearer">
+              <div class="includes">
+                <h3>Includes</h3>
+
+                
+                <ul>
+                                      <li>Community forum: Engage and meet other students, connect with them in real time.</li>
+                                      <li>12 x Module Hands-on Hacking™ Course</li>
+                                      <li>Hands-on Hacking™ 1 x Quiz Attempt (Optional: Certificate)</li>
+                                      <li>Early bird access to future advanced courses &amp; additional content</li>
+                                      <li>Access to Employer portal to network with future prospects</li>
+                                      <li>Exclusive Invites to CTF&#039;s and other Hacker House releases.</li>
+                                      <li>Exclusive Limited Invites to Hacker House event series in Los Angeles 2019</li>
+                                  </ul>
+              </div>
+              <div class="price">
+
+                
+                                <h3>12 Module Course</h3>
+
+                                  <div class="center">
+                    <span class="presale">BOOK LAUNCH DEAL</span>
+                  </div>
+                
+                <div class="center">
+                  <span class="current-price">&#36;&nbsp;550</span>
+                                      <span class="normal-price">&#36;&nbsp;990</span>
+                                    		  <p class="availability"><font color='white'>*Price not inclusive of taxes</font></p>
+                </div>
+                <a href="product/hands-on-hacking-on-demand-pre-sale/index.html" class="button fullgreen">BUY NOW</a>
+                              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <div class="training-testimonial-bg">
+    <div class="container">
+                  <section class="widget testimonial">
+        <div class="inner">
+          <img src="https://hacker.house/wp-content/uploads/2018/11/chris.jpg" alt="Chris Jones, Software Engineer">
+          <blockquote>My Background - I’m software engineer and my job increasingly means being responsible not just for the code but more “sys-admin” type decisions. In addition to this I’ve always felt software teams get next nothing in terms support or training about designing more secure software. It’s always an afterthought. My primary interest was more defensive. The review: In general, the course content was excellent. Matthew was helpful, very knowledgeable and very good at explaining the concepts. What I really found incredibly motivating was seeing the whole context of a hack. In general, as developer you often understand, for example cross-site scripting, and have vague idea of certain dos and don’ts. But it’s only when you see, and do, the whole “hack” that you begin to understand how vulnerabilities can be chained together you begin to “get it” more. The only downside was that the course was too quick for me at times. As someone from a primarily Windows background I’m quite slow on Linux. I would recommend people to brush up on Linux if it’s not their main OS. After all you want to maximise learning about hacking and not how the Linux file system works. I also felt some of the written documentation needed to be a little more idiot-friendly and easier to cut and paste if you get stuck. I did mention it to Matthew and I get the impression it’s something that would be addressed. So, 4 stars and of 5 for me. I’d really recommend the course and came away feeling I understood how it works in real-world and most of all wanting to learn more.</blockquote>
+          <p>Chris Jones, Software Engineer</p>
+        </div>
+        <a data-toggle="modal" data-target="#testimonialsModal">View all reviews</a>
+      </section>
+          </div>
+  </div>
+
+  <div class="training-gray-bg">
+    <div class="container">
+
+      <section class="widget classroom-training">
+        <div class="inner">
+          <div class="course-title">
+            <h2>Webinars &amp; Workshops</h2>
+            <p>Find out more about Cyber Security and Hands-on Hacking™ with our FREE sessions and live streams!</p>
+          </div>
+          <div class="course-items">
+            <div class="item blue">
+                            <img src="wp-content/uploads/2018/12/UPTDATE-B-1.png" alt="Interactive Webinars">
+                            <h3>Interactive Webinars</h3>
+              <ul>
+                                                <li>Ask questions and interact with Hacker House instructors.</li>
+                                  <li>Learn about Hands-on Hacking™ course and how it could change your career.</li>
+                                            </ul>
+            </div>
+            <div class="item green">
+                            <img src="wp-content/uploads/2018/11/goal.png" alt="Hands-on Hacking™">
+                            <h3>Hands-on Hacking™</h3>
+              <ul>
+                                                <li>Learn hacking skills in real-time, get a taster of the course!</li>
+                                  <li>Get more information on the course &amp; content!</li>
+                                            </ul>
+            </div>
+            <div class="item red">
+                            <img src="wp-content/uploads/2018/11/beaker-red.png" alt="Who is this for?">
+                            <h3>Who is this for?</h3>
+              <ul>
+                                                <li>Those seeking to get an introduction into the world of ethical hacking.</li>
+                                  <li>Those pursuing future employment or enhancing their existing skills at work</li>
+                                            </ul>
+            </div>
+          </div>
+          <div class="details row">
+            <div class="col blue col-sm-6">
+              <h4>More information</h4>
+              <ul>
+
+                
+                
+                <li>
+
+                                  <a href="index.html?p=6586" target="_blank">Who is it for?</a>
+                
+                </li>
+                
+                <li>
+
+                                  <a href="index.html?p=6583" target="_blank">What to expect?</a>
+                
+                </li>
+                              </ul>
+            </div>
+            <div class="col red col-sm-6">
+              <h4>Try the course</h4>
+              <ul>
+
+              
+                <li>
+                                  <a href="free-trial/index.html" target="_blank">Receive a full module</a>
+                
+                </li>
+              
+                <li>
+                                  <a href="free-trial/index.html" target="_blank">[START FREE TRIAL]</a>
+                
+                </li>
+                            </ul>
+            </div>
+          </div>
+          <div class="prices">
+            <div class="row">
+              
+
+              
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <div class="mid-gray-bg page-top-fingerprint">
+    <section class="widget training-map">
+      <h2>Join our alumni community. Hack the planet.</h2>
+      <div class="map">
+        <script>
+if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
+	// Do Firefox-related activities
+	document.write("<img src='wp-content/themes/hackerhouse/image/hh-map-v2-static.png'>");
+}
+else{
+	document.write("<img src='wp-content/themes/hackerhouse/image/evilmap.svg'>");
+}
+</script>
+      </div>
+    </section>
+
+    <section class="widget newsletter">
+      <div class="title-back-slash lowercase">
+        <h2>Get updates on our training</h2>
+      </div>
+      <div class="form">
+        <form id="newsletter-subscription" method="post" action="https://hacker.house/wp-admin/admin-ajax.php" data-success="You&#039;ve been subscribed successfully. Thank you!" data-error="An error has occurred. Please try again later.">
+          <input id="newsletter-subscription-input" type="email" name="email" data-error="Please enter a valid email and try again." placeholder="Enter your email" />
+	  <input id="newsletter-subscription-submit" type="submit" class="green" name="submit" value="Subscribe" />
+	   <input type="hidden" id="security" name="security" value="a64e48424f" />
+        </form>
+        <p class="small">We respect your privacy and don&#039;t spam.</p>
+      </div>
+    </section>
+  </div>
+
+</div>
+
+
+<div id="testimonialsModal" class="modal testimonial fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a class="btn-close" data-dismiss="modal" aria-label="Close"></a>
+      </div>
+      <div class="modal-body">
+        <div class="post-content">
+          <article>
+            <div class="content">
+              <h1>Reviews</h1>
+              <ul>
+                                  <li>
+                    <h2>William Ivy - 2017 Alumni, New York City</h2>
+                    <p>I have to say it&#039;s the most in-depth course I&#039;ve ever been a part of. You can tell that the course instructor Matthew is not only passionate about what he does, but wants the students to be proficient in the content.</p>
+                  </li>
+                                  <li>
+                    <h2>Sophia McCall - 2017 Alumni, New York City</h2>
+                    <p>Hacker House are absolutely amazing, I completed the Hands-on-Hacking course run by Matthew and it was absolutely fantastic! Matthew was such an amazing, patient instructor and I learnt absolutely tonnes from it. Coming from a Cyber Security degree this course boosted my learning and motivation within the industry leaving me hungry for more! 10/10 for the Hands-on-Hacking course, I highly recommend it to anyone wanting to get an insight into practical ethical hacking a penetration testing skills, when I left this course it left me with a new found confidence with my technical skills as well as an urge to continue my learning as much as I can! Thank you guys! </p>
+                  </li>
+                                  <li>
+                    <h2>Luca Follis and Adam Fish, NYC Alumni</h2>
+                    <p>A captivating combination of the theory and practice of ethical hacking, the Hands on Hacking workshop, immersed students in the tools of cybercriminals as well as the weapons designed by the cybersecurity state such as the NSA and CIA. In a legal, safe, and sandboxed environment we were instructed in how to use the full range of powerful technologies in the hackers toolbox, from open source intelligence to the deployment of payloads to the take over of root servers. Students learn the skills needed to become proficient in offensive cyber-security.  The instructor Matthew Hickey is extremely knowledgeable with a wide-expertise in the field of penetration testing. Despite his potentially intimidating knowledge he is warm and approachable. He is keen that students complete modules but also understand the underlying mechanics. Hang on, its going to go fast!  </p>
+                  </li>
+                                  <li>
+                    <h2>Camelia Enderby, NYC Alumni</h2>
+                    <p> I have been one of the fortunate people that have had the privilege to attend one of the amazing courses from Hacker House. Coming from a solution and development background I found the course fascinating. The course is run from an ethical hacker psych point which brings in a complete new view of all known security practices (!). The course is hands on and with the wonderful assistance of Mathew, Dragos and Jennifer (every step of the way) by the end of the course your technical comprehension will increase exponentially. I personally left the course with the knowledge that all the best practices I have employed over the years were not sufficient and any new solutions that I will build will take in consideration all the learning from this course. So if your interest is in penetration testing and/or security this course is a necessity if your interest is in development/networks than this course is an eye opening, either way I think this course is beneficial across industry and across technology and no matter what area of IT is your focus point you can learn a lot from it. So thank you again guys and really hope to see you soon!!!</p>
+                  </li>
+                                  <li>
+                    <h2>Glenn Colville, certified Windows enterprise sysadmin</h2>
+                    <p>I had been looking to expand my practical IT security experience and this was by far the best training choice, especially for practical challenge. The theory, practical labs and demonstrations all worked very well together to show me in detail how pen test / ethical hacking is done. Although I struggled to keep up with the demonstrations (can you keep up with the hacking of the mail server free module) I was able to also perform privilege escalation attacks on my own lab environment. Since signing up for the training I saw @hackerfantastic quoted in the UK media about the very recent WannaCry outbreaks. That’s not the only place I have since seen his work on IR / research on other malware outbreaks. He’s out there if you are looking (or even if you aren&#039;t looking). I have been impressed by @hackerfantastic skills of breaking into a wide variety of OSes and devices. His passion to spread the ethical hacking ways is clear from his teaching in the courses. If you are also looking to improve your skills and knowledge from any of IT, infrastructure, DevOps, student, platform or application support backgrounds you will find something useful from Hacker House. </p>
+                  </li>
+                                  <li>
+                    <h2>Chris Jones, Software Engineer</h2>
+                    <p>My Background - I’m software engineer and my job increasingly means being responsible not just for the code but more “sys-admin” type decisions. In addition to this I’ve always felt software teams get next nothing in terms support or training about designing more secure software. It’s always an afterthought. My primary interest was more defensive. The review: In general, the course content was excellent. Matthew was helpful, very knowledgeable and very good at explaining the concepts. What I really found incredibly motivating was seeing the whole context of a hack. In general, as developer you often understand, for example cross-site scripting, and have vague idea of certain dos and don’ts. But it’s only when you see, and do, the whole “hack” that you begin to understand how vulnerabilities can be chained together you begin to “get it” more. The only downside was that the course was too quick for me at times. As someone from a primarily Windows background I’m quite slow on Linux. I would recommend people to brush up on Linux if it’s not their main OS. After all you want to maximise learning about hacking and not how the Linux file system works. I also felt some of the written documentation needed to be a little more idiot-friendly and easier to cut and paste if you get stuck. I did mention it to Matthew and I get the impression it’s something that would be addressed. So, 4 stars and of 5 for me. I’d really recommend the course and came away feeling I understood how it works in real-world and most of all wanting to learn more.</p>
+                  </li>
+                                  <li>
+                    <h2>Rey Bango, Via TrustPilot</h2>
+                    <p>Hacker House helped me to understand how hacking works. When I wanted to get into security, I tried learning on my own using YouTube, books and some online courses. But I struggled to find the time to focus and build a good cadence for learning. I also missed having someone to ask questions to.   So I chose to do an on-site course and found Hacker House. The course was everything I had hoped for. The materials were relevant and offered a great foundation for understanding tooling, methodology and the mindset for pentesting. And the instructor, Mathew, was phenomenal. You could tell he&#039;d been around the block having deep understanding of the tools &amp; materials he was teaching.  The course gave me the knowledge I needed to understand how hacking happens and how to position myself to continue learning new techniques. I highly recommend Hacker House for their quality and commitment to helping their students be successful.</p>
+                  </li>
+                                  <li>
+                    <h2>Jay Smith, Via TrustPilot</h2>
+                    <p>Great intro so far to pentesting methodologies, I&#039;m only a week in but have found the first two modules to be very informative without bogging down or injecting a bunch of unneeded fluff to expand content.</p>
+                  </li>
+                                  <li>
+                    <h2>Eugene Metreveli, Via TrustPilot</h2>
+                    <p>Hands-on-Hacking course from Hacker House should become the next industry recognised standard.  So far it&#039;s the most practically applicable course I had for IT security. Recommended it to all my colleagues.</p>
+                  </li>
+                                  <li>
+                    <h2>Mike Motta, Via TrustPilot</h2>
+                    <p>The best hands-on training I have found so far! I have been to several classes that seem to discuss a lot of theory, but don’t get into the “how to” as this course does! I have learned more through this course using the online material on my own machine and my own time, than any classroom environment I have been in.  Great Job!!!</p>
+                  </li>
+                              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      </main>
+
+    
+    <footer>
+    <section class="contact middle green fingerprinttraining">
+    <div class="container">
+            <h2>Corporate training workshops now available. Contact us for more information.</h2>
+            <a class="button bcall" href="tel://+1-415-230-0346">Call +1-415-230-0346</a>
+      <a class="button bcontact" href="index.html?p=21">Or send us a message</a>
+    </div>
+  </section>
+  <section class="info fingerprint bottom gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <a class="logo" href="index.html" title="Home page"><span>Hacker House</span></a>
+          <p class="special">In <b>California</b>,<b> London</b> &amp; <b>0.0.0.0/0</b></p>
+          <p><b>US</b> <a href="tel://+1-415-230-0346">+1-415-230-0346</a></p>
+<p><b>UK</b> <a href="tel://+442081231379">+44 (0) 208 123 1379</a></p>
+<p><a href="mailto:info@hacker.house">info@hacker.house</a></p>
+
+          <ul class="social-profiles d-block d-sm-none">
+                        <li><a class="icon-twitter" href="https://twitter.com/myhackerhouse"
+             title="Twitter" target="_blank"><span>Twitter</span></a></li>
+                                    <li><a class="icon-facebook" href="https://www.facebook.com/myhackerhouse"
+             title="Facebook" target="_blank"><span>Facebook</span></a></li>
+                                    <li><a class="icon-youtube" href="https://www.youtube.com/playlist?list=PLFh6TWPhaBdDiT9Xf1JFFk9NuZOpiTr-m"
+             title="YouTube" target="_blank"><span>YouTube</span></a></li>
+                                    <li><a class="icon-github" href="https://github.com/hackerhouse-opensource?tab=repositories"
+             title="Github" target="_blank"><span>Github</span></a></li>
+                      </ul>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 flex-first flex-sm-unordered">
+          <p class="title">More info</p>
+          <nav>
+                          <ul id="menu-main-menu-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-8 current_page_item menu-item-37"><a href="index.html?p=8" aria-current="page">Training</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="index.html?p=6">Services</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1219"><a href="shop-redirect/index.html">Shop</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5425"><a href="index.html?p=5423">Press &#038; Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="index.html?p=11">About</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5557"><a href="index.html?p=15">Labs</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1701"><a href="https://dashboard.hacker.house/">Portal</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38"><a href="index.html?p=21">Contact</a></li>
+</ul>
+                      </nav>
+                  </div>
+                <div class="col-md-4 hidden-sm-down" id="footer-shop">
+          <p class="title">Shop</p>
+
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                  <img src="wp-content/uploads/2018/07/hh-hoodie1-273x273.jpg" alt="Hacker Manifesto Hoodie" />
+                  <h3>Hacker Manifesto Hoodie</span></h3>
+                  <a href="index.html?p=468" title=" Hacker Manifesto Hoodie ">view&nbsp;&gt;</a>
+                </div>
+                              <div class="swiper-slide">
+                  <img src="wp-content/uploads/2018/07/HH-t-shrit-mock-back-273x273.jpg" alt="ACAB Tshirt" />
+                  <h3>ACAB Tshirt</span></h3>
+                  <a href="index.html?p=462" title=" ACAB Tshirt ">view&nbsp;&gt;</a>
+                </div>
+              
+            </div>
+            <div class="swiper-button-prev icon-left"></div>
+            <div class="swiper-button-next icon-right"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+              </div>
+    </div>
+  </section>
+    <section class="terms">
+    <div class="container">
+      <span>&copy; 2024 - Hacker House Ltd</span>
+              <ul id="menu-footer-links" class="menu"><li id="menu-item-313" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-313"><a href="index.html?p=311">Privacy policy</a></li>
+<li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-43"><a rel="privacy-policy" href="index.html?p=17">Terms and conditions</a></li>
+<li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41"><a href="index.html?p=21">Contact</a></li>
+</ul>
+          </div>
+  </section>
+</footer>
+
+    <script>
+	jQuery(function ($) {
+
+		var name = "woocommerce_multicurrency_forced_currency";
+		var expires = 31536000;
+		var path = "/";
+		var domain = "";
+		var secure = true;
+
+		var currentURL = "https://hacker.house/training/";
+
+		$(".woocommerce-currency-selector").on("change", function () {
+
+			wpCookies.set(name, this.value, expires, path, domain, secure);
+
+						$(document.body).trigger("wc_fragment_refresh");
+
+						window.location = currentURL;
+		});
+	});
+</script>
+
+	<div id="cookies-notice" tabindex="0">
+    <button class="close icon-close accept-button"></button>
+    <h2>All Computers Are Broken</h2>
+		<p>We use cookies to understand how you use our site and to improve your browsing experience. We only use essential cookies required for serving our website to you at all times. By continuing to use our site, you accept our use of essential cookies. If you do not agree to our use of essential cookies, click no here and you will be redirected away from our website.</p>
+    <p>
+      <a class="action accept-button">[Y]es I agree</a><a class="action deny-button">[N]o I do not agree</a>
+    </p>
+		<p class="prompt">~ HH</p>
+	</div>
+
+  	<script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.8.4' id='swv-js'></script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/hacker.house\/wp-json\/","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.8.4' id='contact-form-7-js'></script>
+<script type='text/javascript' src='https://www.google.com/recaptcha/api.js?render=6LcD1jIpAAAAANg22GBOtDGLyrMO3zCjyiRUJ6pN&#038;ver=3.0' id='google-recaptcha-js'></script>
+<script type='text/javascript' src='wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2' id='wp-polyfill-inert-js'></script>
+<script type='text/javascript' src='wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.11' id='regenerator-runtime-js'></script>
+<script type='text/javascript' src='wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script type='text/javascript' id='wpcf7-recaptcha-js-extra'>
+/* <![CDATA[ */
+var wpcf7_recaptcha = {"sitekey":"6LcD1jIpAAAAANg22GBOtDGLyrMO3zCjyiRUJ6pN","actions":{"homepage":"homepage","contactform":"contactform"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=5.8.4' id='wpcf7-recaptcha-js'></script>
+<script type='text/javascript' id='sage/main.js-js-extra'>
+/* <![CDATA[ */
+var hhData = {"ajaxUrl":"https:\/\/hacker.house\/wp-admin\/admin-ajax.php","exitUrl":"https:\/\/www.duckduckgo.com"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/themes/hackerhouse/dist/scripts/main_790976ee.js' id='sage/main.js-js'></script>
+  </body>
+</html>
